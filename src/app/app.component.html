@@ -1,1 +1,24 @@
-<router-outlet></router-outlet>
+<div class="container">
+  <div class="header">
+    <nav>
+      <div class="logo"><h4>Web Blog</h4></div>
+      <ul [ngClass]="{'slide': openSlide }">
+        <li><a href="#">Latest Articles</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Growth</a></li>
+        <li><a href="#">Custemer Service</a></li>
+        <li><a href="#">Culture</a></li>
+        <li><a href="#">Product</a></li>
+      </ul>
+
+      <div class="menu-toggle">
+        <input type="checkbox" (change)="HamburgerOnClick()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
+  <div class="content"><router-outlet></router-outlet></div>
+  <div class="footer"></div>
+</div>
