@@ -1,16 +1,18 @@
+.logo {
+  font-family: 'Modak', cursive;
+  letter-spacing: 2px;
+}
+
 /* Navbar */
 
 nav {
   display: flex;
   justify-content: space-evenly;
-  height: 60px;
   align-items: center;
   background: rgb(241, 243, 245);
 }
 
 nav .logo {
-  font-family: 'Modak', cursive;
-  letter-spacing: 2px;
   color: rgb(55, 65, 75);
 }
 
@@ -117,5 +119,101 @@ nav ul li a:hover {
 
   nav ul.slide {
     opacity: 1;
+  }
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  background-color: rgb(29, 43, 54);
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer .section-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+}
+
+footer .section-1 .logo {
+  color: rgb(255, 255, 255);
+}
+
+footer .section-1 ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+footer .section-1 ul li:first-child {
+  color: rgb(255, 255, 255);
+}
+
+footer .section-1 ul li a {
+  text-decoration: none;
+  color: rgb(147, 161, 176);
+  font-size: 0.8em;
+}
+
+footer .section-1 ul li a:hover {
+  color: rgb(213, 221, 230);
+}
+
+footer .section-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+}
+
+footer .section-2 ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 85px;
+}
+
+footer .section-2 ul li {
+  width: 20px;
+  height: 20px;
+}
+
+footer .section-2 p {
+  color: rgb(147, 161, 176);
+  font-size: 0.8em;
+}
+
+footer hr {
+  width: 65%;
+}
+
+/* Responsive Breakpoint */
+
+/* tablet size */
+@media screen and (max-width: 900px) {
+  footer .section-1 {
+    width: 75%;
+  }
+  footer .section-2 {
+    width: 75%;
+  }
+  footer hr {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  footer .section-1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .section-2 {
+    flex-direction: column;
+    text-align: center;
   }
 }
